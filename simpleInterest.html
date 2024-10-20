@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Simple Interest Calculation</h2>
+    <p id="result"></p>
+
+    <script>
+        function calculateSimpleInterest(principal, tenure, rate) {
+            return (principal * tenure * rate) / 100;
+        }
+
+        // Inputs
+        var principal = 5000;
+        var tenure = 1;
+        var rate = 2.5;
+
+        // Calculate Simple Interest
+        var simpleInterest = calculateSimpleInterest(principal, tenure, rate);
+
+        // Display Result
+        alert("the simple interest of principal(5000),tenure(1),rate(2.5) is : "+simpleInterest)
+    </script>
+</body>
+</html>

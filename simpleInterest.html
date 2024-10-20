@@ -12,9 +12,10 @@
         function calculateSimpleInterest(principal, tenure, rate) {
             return (principal * tenure * rate) / 100;
         }
-        let principal = 5000;
-        let tenure = 1;
-        let rate = 2.5;
+        //giving input from the user using prompt function
+        let principal=parseFloat(prompt("Enter the pricipal : "))
+        let tenure=parseFloat(prompt("Enter the tenure : "))
+        let rate=parseFloat(prompt("Enter the rate : "))
 
         // Calculating Simple Interest
         var simpleInterest = calculateSimpleInterest(principal, tenure, rate);
